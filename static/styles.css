@@ -1,0 +1,96 @@
+body {
+	font-family: sans-serif;
+	color: black;
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;
+	float:left;
+}
+p {
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.header {
+	width:100%;
+	background-color: blue;
+	margin-bottom: 10px;
+	display: flex;
+	display: -webkit-flex;
+}
+.title {
+	padding-left: 2px;
+	width: 100%;
+}
+.login {
+	position: absolute;
+	display: -webkit-flex;
+	display: flex;
+	padding-top: 20px;
+	padding-right: 30px;
+}
+p.username {
+	text-align:right;
+	padding-top: 10px;
+	padding-right: 2px;
+}
+.main,.item {
+	background-color: #CCCCCC;
+	clear:both;
+	color: black;
+	overflow: auto;
+	max-width: 600px;
+	min-width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+.main {
+	display: -webkit-flex;
+	display: flex;
+}
+.api {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.categories {
+	color: black;
+	width: 50%;
+}
+.items {
+	width: 50%;
+}
+.flash {
+	max-width: 500px;
+	min-width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	color: white;
+	background-color: red;
+}
+a:link,a:visited,a:active {
+	color: #EF253C;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+textarea { 
+	resize:vertical; 
+}
+input,select,textarea {
+	width: 100%;
+	background: #EEEEEE;
+	text-indent: 5px;
+}
+button {
+	background: red;
+	float: left;
+}

@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>udacity FS Nanodegree Project 3 - Catalog App</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="header">
+	<div class="title">
+		<h1>Catalog App</h1>
+	</div>
+	<div class="login">
+		{%if 'username' not in session%}
+		<a href="{{url_for('showLogin')}}"><button style="float: right">Login</button></a>
+		{% else %}
+		<a href="{{url_for('gdisconnect')}}"><button style="float: right">Logout</button></a>
+		{% endif %}
+	</div>
+</div>
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<div class = "flash">
+	<ul>
+	{% for message in messages %}
+		<li> <strong> {{ message }} </strong> </li>
+	{% endfor %}
+	</ul>
+</div>
+{% endif %}
+{% endwith %}
